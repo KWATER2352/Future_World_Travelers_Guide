@@ -1,0 +1,197 @@
+:root {
+--main-trans: rgb(171, 178, 185, 0.5);
+--main-border: rgb(171, 178, 185);
+--light-gray: #f6f6f6;
+}
+header nav {
+  display: flex;
+  position: relative;
+  background-color: black;
+}
+
+header .checkbox {
+  font-size: 3rem;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+header input{
+  display: none;
+}
+
+header nav i {
+  display: inline-block;
+  color: white;
+  justify-items: center;
+  cursor: pointer;
+}
+
+header nav li{
+  display: inline;
+}
+
+#main-nav li a {
+  display: flex;
+  float: left;
+  padding: 14px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+}
+
+#main-nav li a:hover {
+  background-color: var(--main-trans);
+  color: white;
+
+}
+
+body .intro-section {
+  background-image: url("World-pics/blue-volumes.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  height: 70%;
+  padding: 30px;
+}
+
+body h1 {
+  font-family: "Josefin Sans", serif;
+  font-weight: normal;
+  font-size: 3rem;
+}
+
+body div.description {
+  background-color: var(--main-trans);
+  display: flex;
+  margin: auto;
+  position: relative;
+  width: 50%;
+  height: 70%;
+}
+
+body div.description p {
+ font-family: "Nunito", serif;
+  font-size: 1.2rem;
+  padding: 20px;
+}
+
+body h2 {
+  font-family: "Raleway", serif;
+}
+
+section .Attractions div.rows {
+  display: flex;
+}
+
+section .Attractions div.column {
+  float: left;
+  padding: 5px;
+}
+section .Attractions div.column img {
+  border-radius: 10%;
+}
+
+.countries {
+  background-color: white;
+  background-size: cover;
+  height: 600px;
+
+}
+
+.search-container {
+  margin: auto;
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  border-radius: 5px;
+  height: 30px;
+  box-sizing: border-box;
+
+}
+
+.results-box {
+
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+
+}
+
+ input {
+
+  flex: 1;
+  height: 60px;
+  background-color: var(--light-gray);
+  border: 0;
+  border-radius: 5px;
+  outline: 0;
+  font-size: 18px;
+
+}
+
+::placeholder {
+  color: #555;
+  font-size: 18px;
+
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+button .ri-search-2-line {
+  width: 25px;
+  color: #555;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+#autocomplete-list {
+  list-style-type: none;
+  top: 70px;
+  left: 0;
+  margin: auto;
+  padding: 0;
+  background-color: #fff;
+  width: calc(100% - 30px);
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+#autocomplete-list li {
+  color: black;
+  border: 1px solid #999;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 1px solid var(--light-gray);
+  width: calc(100% - 30px);
+  cursor: pointer;
+
+}
+
+
+#autocomplete-list a {
+ display: block;
+ color: black;
+ text-decoration: none;
+ font-size: 18px;
+ padding: 12px;
+
+}
+
+#autocomplete-list li:hover {
+  background-color: var(--light-gray);
+}
+
+
+#autocomplete-list a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+
+
